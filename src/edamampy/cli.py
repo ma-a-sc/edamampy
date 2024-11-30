@@ -2,8 +2,8 @@ import argparse
 
 from classes.ApiHandler import EdamamAPIHandler
 from classes.Exceptions import EdamamAPIFieldValidationError
-from config.settings import ApiSettings
-from constants.const import INCLUDED_FIELDS
+from src.edamampy.config.settings import ApiSettings
+from src.edamampy.constants.const import INCLUDED_FIELDS
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(

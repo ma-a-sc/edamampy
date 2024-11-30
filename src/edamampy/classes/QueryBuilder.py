@@ -1,7 +1,7 @@
 from requests import PreparedRequest
 
-from classes.Exceptions import EdamamURLValidationError, EdamamAPIFieldKeyError
-from classes.Validator import EdamamFieldValidator
+from src.edamampy.classes.Exceptions import EdamamURLValidationError, EdamamAPIFieldKeyError
+from src.edamampy.classes.Validator import EdamamFieldValidator
 
 API_FIELD_VALIDATOR_MAPPING = {
     "q": "_validate_q",

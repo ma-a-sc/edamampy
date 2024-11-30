@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from constants.const import INCLUDED_FIELDS
+from src.edamampy.constants.const import INCLUDED_FIELDS
 
 class ApiSettings(BaseModel):
     api_key: str

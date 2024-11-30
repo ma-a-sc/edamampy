@@ -2,9 +2,9 @@ from typing import Optional
 
 from requests import request
 
-from classes.Exceptions import EdamamAPIException, EdamamAPIFieldKeyError
-from classes.QueryBuilder import EdamamQueryBuilder
-from config.settings import ApiSettings
+from src.edamampy.classes.Exceptions import EdamamAPIException
+from src.edamampy.classes.QueryBuilder import EdamamQueryBuilder
+from src.edamampy.config.settings import ApiSettings
 
 from pydantic import BaseModel, Field
 

@@ -1,5 +1,5 @@
-from classes.Exceptions import EdamamAPIFieldValidationError
-from constants.const import (
+from src.edamampy.classes.Exceptions import EdamamAPIFieldValidationError
+from src.edamampy.constants.const import (
     INCLUDED_FIELDS,
     RANDOM_FIELD,
     IMAGE_SIZE,
