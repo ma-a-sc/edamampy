@@ -31,12 +31,17 @@ pip install edamampy
 from edamampy import EdamamAPIHandler
 from edamampy import ApiSettings
 
-settings = ApiSettings()
+settings = ApiSettings(api_key="your_api_key", app_id="your_app_id", edamam_base_url="current_edamam_base_url")
 
 handler = EdamamAPIHandler(settings)
 
+# will print out paiginated 20 recipes per iteration. Each iteration is one api call.
 for recipes in handler:
     print(recipes.model_dump())
+    
+# incremental
+recipes = handler.__next__()
+print(recipes.model_dump())
 
 ```
 Each for loop iteration is one part of the paiginated api response.
