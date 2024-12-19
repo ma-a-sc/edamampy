@@ -4,34 +4,25 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "edamampy"
-version = "0.0.4"
+version = "0.0.1"
 authors = [
   { name="Mark Scharmann"},
 ]
 description = "An easier way of interacting with the edamam recipe search api."
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "annotated-types >= 0.7.0",
-    "certifi >= 2024.8.30",
-    "charset-normalizer >= 3.4.0",
-    "idna >= 3.10",
-    "pydantic >= 2.9.2",
-    "pydantic_core >= 2.23.4",
-    "python-dateutil >= 2.9.0.post0",
-    "requests >= 2.32.3",
-    "six >= 1.16.0",
-    "typing_extensions >= 4.12.2",
-    "urllib3 >= 2.2.3",
+    "requests",
+    "pydantic",
 ]
 
 [project.scripts]
-cli = "edamampy:__main__"
+cli = "edamampy:cli"
 
 [project.urls]
 Homepage = "https://github.com/ma-a-sc/edamampy"

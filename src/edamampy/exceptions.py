@@ -28,4 +28,3 @@ class EdamamAPIException(Exception):
         super().__init__(
             f"{message} HTTP status code: {status_code}. Return data: {ret}. Additional messages: {additional_message}"
         )
-
